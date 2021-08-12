@@ -1,0 +1,5 @@
+#!/bin/bash
+
+bgs=$(ls -1 /home/lnicof/Imágenes/bgs/*.* | sed s/^.*\\/\//)
+lines=$(echo -e "${bgs}" | grep "" -c)
+feh --bg-fill "/home/lnicof/Imágenes/bgs/$(echo -e "${bgs}" | rofi -dmenu -lines "${lines}")"
