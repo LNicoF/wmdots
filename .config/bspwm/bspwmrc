@@ -1,0 +1,43 @@
+#! /bin/sh
+
+# Keybinds
+sxhkd &
+
+# Polybar
+killall polybar; polybar main &
+
+# Backgound
+/home/lnicof/.fehbg
+
+# Compositor
+picom &
+
+# Redshift
+pidof redshift || redshift -c '/home/lnicof/.config/redshift.conf' -r &
+
+# Clipboard Manager
+clipmenud &
+
+# Config
+bspc monitor -d I II III IV V VI VII VIII IX X
+bspc desktop III -l monocle
+
+bspc config border_width 			 3
+bspc config window_gap           	12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# Widow rules
+bspc rule -a firefox desktop='^3' follow=on
+bspc rule -a feh state=floating
+bspc rule -a minecraft-launcher desktop='^5' state=floating
+bspc rule -a discord desktop='^4' follow=off
+bspc rule -a Minecraft desktop='^5' follow=on
+bspc rule -a Brawlhalla desktop='^5' follow=on
+bspc rule -a prompt_window state=floating follow=on rectangle=400x100+3+3
+
+# Colors
+bspc config normal_border_color '#292d3e'
+bspc config focused_border_color '#c792ea'

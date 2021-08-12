@@ -1,0 +1,63 @@
+;==========================================================
+;
+;
+;   ██╗    ██╗  ██╗██╗           ██████╗
+;   ██║    ███╗ ██║╚═╝           ██╔══██╗
+;   ██║    ████╗██║██╗████╗█████╗██████╔╝ ███╗ ████╗
+;   ██║    ██╔████║██║██╔═╝██╔██║██╔══██╗██╔██╗██╔═╝
+;   ██████╗██║ ███║██║████╗█████║██████╔╝ ████║██║
+;   ╚═════╝╚═╝ ╚══╝╚═╝╚═══╝╚════╝╚═════╝  ╚═══╝╚═╝
+;
+;
+;==========================================================
+
+[colors]
+
+		 black = #292d3e
+	 	  gray = #697098
+		 white = #bfc7d5
+	    purple = #c792ea
+		  blue = #82b1ff
+   blue_purple = #939ede
+		 green = #c3e88d
+	    yellow = #ffcb6b
+		   red = #ff5370
+ white_mask_11 = #989aa2
+
+bg  = ${colors.black}
+bga = ${colors.gray}
+
+fg  = ${colors.white}
+fga = ${colors.white}
+
+
+[bar/powermenu]
+width = 40
+height = 30
+radius = 10.0
+bottom = true
+fixed-center = false
+
+offset-x = 100%:-60
+
+background = ${colors.red}
+foreground = ${colors.black}
+
+font-0 = RobotoMonoNerdFont-Bold:style:Bold:pixelsize=10;2
+font-1 = RobotoMonoNerdFont-Bold:style:Bold:pixelsize=12;2
+font-2 = JetBrainsMono Nerd Font Mono:pixelsize=16;3
+
+modules-center = powermenu
+
+cursor-click = pointer
+
+click-left = bash $HOME/.config/polybar/scripts/power.sh
+
+
+[module/powermenu]
+type = custom/text
+
+content = %{T3}%{T-}
+
+label-font = 2
+

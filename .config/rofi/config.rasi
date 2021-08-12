@@ -1,0 +1,26 @@
+configuration {
+	width: 20;
+	lines: 21;
+	columns: 1;
+	font: "RobotoMonoNerdFont 16";
+	bw: 0;
+	location: 4;
+	padding: 5;
+	yoffset: 20;
+	xoffset: -20;
+	fixed-num-lines: true;
+	terminal: "kitty";
+	separator-style: "solid";
+	hide-scrollbar: true;
+	scroll-method: 1;
+	color-window: "#dd697098,#c792ea";
+	color-normal: "#0000,#bfc7d5,#0000,#c792ea,#697098";
+	kb-remove-to-eol: "";
+	kb-accept-entry: "Return,KP_Enter";
+	kb-row-up: "Up,Control+k,ISO_Left_Tab";
+	kb-row-down: "Down,Control+j";
+	modi: "drun,window,run";
+	show-icons: true;
+	icon-theme: "Yaru-Purple";
+	display-drun: "->";
+}

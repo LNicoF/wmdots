@@ -1,0 +1,43 @@
+.black-b  { background-color: #292d3e }
+.gray-b   { background-color: #697098 }
+.white-b  { background-color: #bfc7d5 }
+.purple-b { background-color: #c792ea }
+.green-b  { background-color: #c3e88d }
+
+.black-bh:hover > button,
+.black-bh:hover > a > button
+          { background-color: #292d3e }
+.gray-bh:hover > button,
+.gray-bh:hover > a > button
+          { background-color: #697098 }
+.white-bh:hover > button,
+.white-bh:hover > a > button
+          { background-color: #bfc7d5 }
+.purple-bh:hover > button,
+.purple-bh:hover > a > button
+          { background-color: #c792ea }
+.green-bh:hover > button,
+.green-bh:hover > a > button
+          { background-color: #c3e88d }
+
+.black-f  { color: #292d3e }
+.gray-f   { color: #697098 }
+.white-f  { color: #bfc7d5 }
+.purple-f { color: #c792ea }
+.green-f  { color: #c3e88d }
+
+.black-fh:hover > button,
+.black-fh:hover > a > button
+          { color: #292d3e }
+.gray-fh:hover > button,
+.gray-fh:hover > a > button
+          { color: #697098 }
+.white-fh:hover > button,
+.white-fh:hover > a > button
+          { color: #bfc7d5 }
+.purple-fh:hover > button,
+.purple-fh:hover > a > button
+          { color: #c792ea }
+.green-fh:hover > button,
+.green-fh:hover > a > button
+          { color: #c3e88d }

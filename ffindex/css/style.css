@@ -1,0 +1,78 @@
+/* TAGS */
+
+body {
+	font-family: JetBrainsMono Nerd Font Mono;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+button {
+	margin: 4px;
+	display: block;
+	padding: 8px 4px;
+	background: inherit;
+	border: none;
+	border-radius: 50px;
+	font: inherit;
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/* asdf */
+
+.nav > li {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.nav > li > ul {
+	display: none;
+}
+
+.nav > li:hover > ul {
+	display: block;
+	left: 25%
+}
+
+.nav > li > ul {
+	position: absolute;
+	width: 50%;
+}
+
+
+/* ALIGMENT */
+
+.w-100 {
+	width: 100%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-33 {
+	width: 33.33%;
+}
+
+.w-25 {
+	width: 25%;
+}
+
+.center {
+	margin: auto;
+}
