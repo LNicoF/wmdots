@@ -1,4 +1,3 @@
-# Defined in - @ line 1
-function la --wraps='ls -a' --description 'alias la=ls -A'
-  ls -A $argv;
+function la --wraps=ls --wraps='ls -A' --description 'alias la=ls -A'
+  ls -A $argv; 
 end

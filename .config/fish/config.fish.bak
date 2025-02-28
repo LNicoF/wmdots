@@ -1,0 +1,18 @@
+# Start X at login
+if status is-login
+  if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+	exec startx
+  end
+else
+  PF_COL1=5 pfetch
+  colorscript -e panes
+  echo
+end
+
+set fish_greeting
+
+#
+# Aliases
+#
+alias la='ls -A'
+alias lla='ls -lA'

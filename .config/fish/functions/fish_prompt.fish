@@ -1,17 +1,16 @@
 function fish_prompt
-	set last_status $status
+    set -l last_status $status
 
-	git rev-parse --git-dir &> /dev/null
-	if [ $status -eq 0 ]
-		echo -n (set_color yellow)
-	else
-		echo -n \ 
-	end
+    set -l red (set_color red)
+    set -l green (set_color green)
+    set -l yellow (set_color --bold yellow)
+    set -l normal (set_color normal)
 
-	if [ $last_status -eq 0 ]
-		echo -n (set_color green)
-	else
-		echo -n (set_color red)
-	end
-	echo -n "|>" (set_color normal)
+    if test $last_status = 0
+        set status_color $green
+    else
+        set status_color $red
+    end
+
+    echo -n -s $status_color (dir_type_prompt) ' '  $yellow '⋊> '
 end
