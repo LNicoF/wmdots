@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+locura=$(wmctrl -l | grep -c "")
+echo $locura
+
+if [ $locura -eq 0 ]
+then
+    $HOME/.scripts/power.sh
+else
+    bspc node -c
+fi
